@@ -16,4 +16,10 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  server: {
+    watch: {
+      // ⚡ 무거운 캐시 및 노드 폴더를 감시 대상에서 완전히 제외합니다.
+      ignored: ['**/node_modules/**', '**/.deno/**', '**/.svelte-kit/**'],
+    },
+  },
 });
