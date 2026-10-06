@@ -4,7 +4,9 @@
     "build": "deno run -A npm:vite build",
     "preview": "deno run -A npm:vite preview",
     "check": "deno run -A npm:svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "deno run -A npm:svelte-check --tsconfig ./tsconfig.json --watch"
+    "check:watch": "deno run -A npm:svelte-check --tsconfig ./tsconfig.json --watch",
+    "test:e2e": "deno run -A npm:playwright test",
+    "test:e2e:ui": "deno run -A npm:playwright test --ui"
   },
   "nodeModulesDir": "auto",
   "allowScripts": ["npm:svelte-kit"]

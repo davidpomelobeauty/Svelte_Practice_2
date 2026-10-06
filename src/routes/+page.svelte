@@ -3,7 +3,7 @@
 
   let text = $state('');
   function handlePaste(event: ClipboardEvent) {
-    event.preventDefault();
+    // event.preventDefault();
   }
 </script>
 
